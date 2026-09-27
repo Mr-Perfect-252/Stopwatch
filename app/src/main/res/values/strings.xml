@@ -6,5 +6,7 @@
     <string name="reset">Reset</string>
     <string name="check_updates">Check for updates</string>
     <string name="version_placeholder">v0.0.0</string>
+    <string name="whats_new_title">What\'s new</string>
+    <string name="whats_new_body">Fresh launcher icon, a version pill, and this What\'s new card.</string>
     <string name="lap_row">Lap %1$d — %2$s  (total %3$s)</string>
 </resources>

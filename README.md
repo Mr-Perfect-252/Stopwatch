@@ -27,6 +27,9 @@ CI builds a signed release APK and prints both SHAs. See
   past an hour). Laps are listed newest-first.
 - **Version pill** — a small badge under the title shows the installed version (e.g. `v1.0.1`), so it's
   obvious which build is running.
+- **What's new card** — a small panel under the pill listing the highlights of the current release.
+- **Launcher icon** — a real stopwatch icon (`mipmap-*/ic_launcher.png` + `_round` + adaptive
+  `mipmap-anydpi-v26/`), generated from `icon.png` and declared via `android:icon` / `android:roundIcon`.
 - **OTA updates** — a periodic WorkManager check is scheduled in `StopwatchApp.onCreate()`, and the
   *Check for updates* button runs the full `checkAndPrompt()` flow (check → dialog → download →
   SHA-256 verify → Android installer).
