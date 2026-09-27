@@ -25,6 +25,8 @@ CI builds a signed release APK and prints both SHAs. See
 
 - **Stopwatch** — Start/Pause, Reset, and Lap. Elapsed time is shown as `MM:SS.cc` (or `H:MM:SS.cc`
   past an hour). Laps are listed newest-first.
+- **Version pill** — a small badge under the title shows the installed version (e.g. `v1.0.1`), so it's
+  obvious which build is running.
 - **OTA updates** — a periodic WorkManager check is scheduled in `StopwatchApp.onCreate()`, and the
   *Check for updates* button runs the full `checkAndPrompt()` flow (check → dialog → download →
   SHA-256 verify → Android installer).

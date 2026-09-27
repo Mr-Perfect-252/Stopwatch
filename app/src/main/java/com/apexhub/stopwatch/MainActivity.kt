@@ -52,6 +52,11 @@ class MainActivity : AppCompatActivity() {
         startStopButton = findViewById(R.id.btn_start_stop)
         lapList = findViewById(R.id.lap_list)
 
+        // Version pill — show the installed versionName so releases are visually verifiable.
+        findViewById<TextView>(R.id.version_pill).text = runCatching {
+            "v" + packageManager.getPackageInfo(packageName, 0).versionName
+        }.getOrDefault("")
+
         startStopButton.setOnClickListener { toggleRun() }
         findViewById<Button>(R.id.btn_lap).setOnClickListener { recordLap() }
         findViewById<Button>(R.id.btn_reset).setOnClickListener { reset() }

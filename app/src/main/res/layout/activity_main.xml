@@ -16,6 +16,24 @@
         android:textColor="#8B949E"
         android:textSize="13sp" />
 
+    <!-- Small version pill — populated at runtime from the installed versionName. -->
+    <TextView
+        android:id="@+id/version_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_version_pill"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.05"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:text="@string/version_placeholder"
+        android:textColor="#4FD6A0"
+        android:textSize="11sp" />
+
     <TextView
         android:id="@+id/elapsed"
         android:layout_width="match_parent"
